@@ -222,6 +222,7 @@ int main(void)
         if (c == 50) {
             printf("commit\n");
             select_commit();
+            wait(NULL);
             printf("\033[1;33m\nPress r to return to the menu\033[0m\n");
             menu_wait();
         }
